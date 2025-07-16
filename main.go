@@ -3,15 +3,18 @@ package main
 import (
 	"fmt"
 
-	"github.com/DataVizWiz/data-with-go/cmd/hello"
-	"github.com/DataVizWiz/data-with-go/cmd/words"
+	"golang.org/x/example/hello/reverse"
 )
 
 func main() {
-	sentence := "hello metin my name is metin"
-	counts, _ := words.CountWords(sentence)
-
-	fmt.Print(counts)
-
-	hello.SayHello()
+	fmt.Println(reverse.String("Hello"))
 }
+
+// func main() {
+// 	sentence := "hello metin my name is metin"
+// 	counts, _ := words.CountWords(sentence)
+
+// 	fmt.Print(counts)
+
+// 	hello.SayHello()
+// }
